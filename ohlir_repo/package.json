@@ -1,0 +1,20 @@
+{
+  "name": "ohlir-ecommerce",
+  "version": "1.0.0",
+  "description": "Premium Organic Soaps E-commerce Platform",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "setup": "chmod +x setup.sh && ./setup.sh"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "gsap": "^3.13.0"
+  }
+}
